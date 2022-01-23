@@ -1,3 +1,6 @@
+#original source of this docker file - https://github.com/wtakuo/xv6-env
+# I removed some stuff from it and add g++
+
 FROM ubuntu
 
 LABEL maintainer="debashish.deka@cohesity.com"
