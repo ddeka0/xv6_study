@@ -1,7 +1,7 @@
 ### xv6_study
 This repository contains modified xv6 files along with docker file
-
 Steps:
+
 	1. git clone https://github.com/ddeka0/xv6_study
 	2. cd xv6_study
 	3. docker build -t ddeka/xv6-env .
