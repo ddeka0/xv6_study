@@ -6,5 +6,5 @@ Steps:
 	2. cd xv6_study
 	3. docker build -t ddeka/xv6-env .
 	4. cd xv6-riscv
-	4. docker run -it --rm -v $(pwd):/home/xv6/xv6-riscv ddeka/xv6-env
+	5. docker run -it --rm -v $(pwd):/home/xv6/xv6-riscv ddeka/xv6-env
 	(Now you can start making the kernel and follow the course)
