@@ -23,10 +23,19 @@ RUN apt-get update \
       git \
       build-essential \
       gdb-multiarch \
-      qemu-system-misc \
       gcc-riscv64-linux-gnu \
       binutils-riscv64-linux-gnu \
-			g++ \
+      g++ \
+      wget \
+      pkg-config \
+      libglib2.0-dev \
+      libpixman-1-dev \
+ && https://download.qemu.org/qemu-5.1.0.tar.xz --no-check-certificate
+ && tar xvf qemu-5.1.0.tar.xz
+ && cd qemu-5.1.0
+ && ./configure --target-list=riscv64-softmmu
+ && make
+ && make install
  && rm -rf /var/lib/apt/lists/* \
  && groupadd ${GROUP} \
  && useradd -g ${GROUP} -m ${USER} \
