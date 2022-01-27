@@ -16,6 +16,7 @@ Why would you use this repo to start learning xv6 ?
 	(for example https://stackoverflow.com/questions/66390948/make-qemu-on-xv6-riscv-gets-stucked-at-qemu-system-riscv64-command)
 	
 	Now, you can avoid those annoying tool issues by using the docker images provided in this repo.
+	use this docker file in your win/linux/mac systems.
 
 ------------------
 
@@ -30,9 +31,13 @@ Steps for using pre-built container from docker hub:
 Steps to start using xv6 OS 
 
 	1. git clone --recurse-submodules https://github.com/ddeka0/xv6_study.git
+		(Downloads all the source code of xv6 along with dockerfile)
 	2. cd xv6_study/xv6-riscv
+		(Working directory is xv6-riscv)
 	3. docker pull ddeka/xv6-env-updated
+		(Pull the docker image from docker hub)
 	4. docker run -it --rm -v $(pwd):/home/xv6/xv6-riscv ddeka/xv6-env-updated
+		(Run a container equipped with xv6 dev env)
 
 	(Now you can start making the kernel and follow the course)
 
@@ -42,8 +47,11 @@ Steps to start using xv6 OS
 	   So, do an `ls` to see if the `xv6-riscv` directory is available or not.
 
 	5. cd xv6-riscv
+		(We are inside the container now, do the mapped directory)
 	6. make
+		(Build the kernel source code)
 	7. make qemu
+		(Start the xv6 os inside qemu emulator)
 	(Now you will be promted with xv6 OS terminal)
 
 	Once you are done woking with `xv6` terminal, then exit from it using `Ctrl+A  X`
