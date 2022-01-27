@@ -28,7 +28,7 @@ RUN apt-get update \
       pkg-config \
       libglib2.0-dev \
       libpixman-1-dev \
- && https://download.qemu.org/qemu-5.1.0.tar.xz --no-check-certificate \
+ && wget https://download.qemu.org/qemu-5.1.0.tar.xz --no-check-certificate \
  && tar xvf qemu-5.1.0.tar.xz \
  && cd qemu-5.1.0 \
  && ./configure --target-list=riscv64-softmmu \
