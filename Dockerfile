@@ -1,5 +1,5 @@
 #original source of this docker file - https://github.com/wtakuo/xv6-env
-# I removed some stuff from it and add g++
+# I removed some stuff from it and add qemu build from source for riscv64
 
 FROM ubuntu
 
