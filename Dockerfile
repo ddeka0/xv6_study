@@ -34,6 +34,7 @@ RUN apt-get update \
  && ./configure --target-list=riscv64-softmmu \
  && make -j16 \
  && make install \
+ && cd .. \
  && rm -rf /var/lib/apt/lists/* \
  && groupadd ${GROUP} \
  && useradd -g ${GROUP} -m ${USER} \
