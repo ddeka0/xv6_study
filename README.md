@@ -25,7 +25,7 @@ Why would you use this repo to start learning xv6 ?
 #### Before following steps, please install `docker` and `git` in your system (win/linux/macos)
 
 
-##### Steps for using pre-built container from docker hub:
+##### Steps for using pre-built image from docker hub:
 
 
 Steps to start using xv6 OS 
