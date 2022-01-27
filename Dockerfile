@@ -3,7 +3,7 @@
 
 FROM ubuntu
 
-LABEL maintainer="debashish.deka@cohesity.com"
+LABEL maintainer="debashish.deka.c2019@iitbombay.org"
 
 ARG TZ=UTC
 ARG USER=xv6
@@ -11,8 +11,6 @@ ARG GROUP=xv6
 ARG PASS=xv6
 ENV HOME=/home/${USER}
 ENV XV6=${HOME}/xv6-riscv
-
-#COPY --from=opfsbuilder /root/local/bin/* /usr/local/bin/
 
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata \
@@ -34,7 +32,7 @@ RUN apt-get update \
  && tar xvf qemu-5.1.0.tar.xz \
  && cd qemu-5.1.0 \
  && ./configure --target-list=riscv64-softmmu \
- && make \
+ && make -j16 \
  && make install \
  && rm -rf /var/lib/apt/lists/* \
  && groupadd ${GROUP} \
