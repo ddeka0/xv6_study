@@ -1,5 +1,5 @@
 #### xv6_study
-This repository contains xv6 files along with docker file. xv6 files are linked as submodule from the official repo.
+This repository contains xv6 files along with docker file containing xv6 dev env. xv6 files are linked as submodule from the official repo.
 
 ------------------
 
