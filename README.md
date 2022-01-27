@@ -22,10 +22,10 @@ Why would you use this repo to start learning xv6 ?
 
 
 #### Steps:
+#### Before following steps, please install `docker` and `git` in your system (win/linux/macos)
 
-Steps for using pre-built container from docker hub:
 
-##### Before following steps, please install `docker` and `git` in your system (win/linux/macos)
+##### Steps for using pre-built container from docker hub:
 
 
 Steps to start using xv6 OS 
@@ -104,7 +104,7 @@ https://youtu.be/o44d---Dk4o?t=4071
 
 ------------------
 
-Steps for building the image from scratch:
+##### Steps for building the image from scratch:
 	
 	1. git clone --recurse-submodules https://github.com/ddeka0/xv6_study.git
 	2. cd xv6_study/xv6-riscv
