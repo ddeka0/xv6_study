@@ -36,7 +36,7 @@ Steps to start using xv6 OS
 		(Working directory is xv6-riscv)
 	3. docker pull ddeka/xv6-env-updated
 		(Pull the docker image from docker hub)
-	4. docker run -it --rm -v $(pwd):/home/xv6/xv6-riscv ddeka/xv6-env-updated
+	4. docker run -it --rm --name my_container -v $(pwd):/home/xv6/xv6-riscv ddeka/xv6-env-updated
 		(Run a container equipped with xv6 dev env)
 
 	(Now you can start making the kernel and follow the course)
@@ -65,7 +65,8 @@ Steps to use gdb
 	8. make CPUS=1 qemu-gdb ( This is going to start a gdb server )
 
 	Now open another terminal on the same running container and go to `xv6-riscv` dir
-	(use docker exec command to start a new bash shell)
+	(use docker exec command to start a new bash shell, docker exec -it my_container bash)
+        
 
 	9. gdb-multiarch
 
