@@ -110,7 +110,7 @@ https://www.youtube.com/playlist?list=PLbtzT1TYeoMhTPzyTZboW_j7TPAnjv9XB
 
 ------------------
 
-##### Steps for building the image from scratch:
+##### Steps for building the docker image from scratch:
 	
 	1. git clone --recurse-submodules https://github.com/ddeka0/xv6_study.git
 	2. cd xv6_study/xv6-riscv
