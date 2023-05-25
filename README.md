@@ -98,10 +98,15 @@ Steps to use gdb
 ------------------
 
 Now you can follow along using the following point in time of the 3rd lecture of 
+(Use gdb to step through the kernel starting process and so on..)
 
 https://pdos.csail.mit.edu/6.828/2021/schedule.html
 
 https://youtu.be/o44d---Dk4o?t=4071
+
+Additionally you can follow this xv6 lecture series 
+	   
+https://www.youtube.com/playlist?list=PLbtzT1TYeoMhTPzyTZboW_j7TPAnjv9XB
 
 ------------------
 
